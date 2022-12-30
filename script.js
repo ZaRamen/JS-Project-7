@@ -57,12 +57,23 @@ function startTimer()
 function decrement()
 {
     document.getElementById("timer").innerHTML = "Time Remaining: " + timeLeft + " seconds";
-    timeLeft--;
     if (timeLeft == 0)
     {
-        alert("You ran out of time");
-        nextPokemon();
+        
+        setTimeout(function (){
+            alert("You ran out of time");
+        }, 200);
+
+        setTimeout(function ()
+        {
+           nextPokemon(); 
+        }, 250);
+        
     }
+    console.log(timeLeft);
+    
+    timeLeft--;
+    
 }
 
 //button choices 
@@ -88,7 +99,7 @@ function guessPokemon()
 }
 function hint()
 {
-    
+
 }
 function nextPokemon(guessRight)
 {
