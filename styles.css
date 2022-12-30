@@ -1,3 +1,8 @@
+*
+{
+    color: white;
+    background-color: rgb(39, 37, 37);
+}
 html, body
 {
     margin:0;
@@ -5,8 +10,8 @@ html, body
     box-sizing: border-box;
     width: auto;
     height: auto;
-   
 }
+
 .wrapper
 {
     width: 80%;
@@ -42,18 +47,19 @@ button
 }
 ol
 {
-    font-size: 1rem;
     padding: 0;
     list-style-position: inside;
 }
 li
 {
+    font-size: 1.1rem;
     margin: 10px;
 }
 input
 {
     font-size: 50px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 90%;
     height: fit-content;
+    background-color: rgb(50, 51, 52);
 }

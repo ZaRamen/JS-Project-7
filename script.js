@@ -8,22 +8,27 @@ var currentHintName = "";
 
 function logKey(event)
 {
-    // console.log(event.which);
-    //enter key
-    if (event.which == 13)
-    {
-        guessPokemon();
-    }
-    //H key
-    else if (event.which == 104)
-    {
-        hint();
-    }
-    // space key
-    else if (event.which == 32)
-    {
-        nextPokemon(false);
-    }
+     console.log(event.which);
+     //key presses don't work when input field is focused
+     if (document.getElementById('guess') != document.activeElement)
+     {
+        //enter key
+        if (event.which == 13)
+        {
+            guessPokemon();
+        }
+        // '/' key
+        else if (event.which == 47)
+        {
+            hint();
+        }
+        // space key
+        else if (event.which == 32)
+        {
+            nextPokemon(false);
+        }
+     }
+   
 }
 async function fetchPokeAPI(url)
 {
