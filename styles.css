@@ -42,6 +42,7 @@ button
 }
 ol
 {
+    font-size: 1rem;
     padding: 0;
     list-style-position: inside;
 }

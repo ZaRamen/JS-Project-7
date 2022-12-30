@@ -8,23 +8,25 @@
     <script src="script.js"></script>
     <title>Pokemon Guessing Game</title>
 </head>
-<body>
+<body onkeypress="logKey(event)">
 
     <div class="wrapper">
         <h1>Pokemon Guessing Game</h1>
-        <p>Rules: </p>
+        <h2>Rules:</h2>
         <ol>
             <li>
-                Guess the Pokémon full name based on the image provided
+                Guess the Pokémon full name based on the image provided. You can also press enter to do the same action.
             </li>
             <li>
                 30-second timer for each guess. Try as many times as possible
             </li>
             <li>
-                Click Next Pokémon to go to start guessing a new Pokémon
+                Click Next Pokémon to go to start guessing a new Pokémon. You can also press Space to do the same action.
             </li>
             <li>
-                Click the hint for a clue on the name.
+                Click the hint for a clue on the name. You only get 3 hints. 
+                Click the hint button four times to see all the hints.
+                You can also press H to do the same action. 
             </li>
             <li>
                 Good luck and have fun
