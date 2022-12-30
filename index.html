@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Pokemon Guessing Game</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Pokemon Guessing Game</h1>
+        <p>Rules: </p>
+        <ol>
+            <li>
+                Guess the Pokémon full name based on the image provided
+            </li>
+            <li>
+                30-second timer for each guess. Try as many times as possible
+            </li>
+            <li>
+                Click Next Pokémon to go to start guessing a new Pokémon
+            </li>
+            <li>
+                Click the hint for a clue on the name.
+            </li>
+            <li>
+                Good luck and have fun
+            </li>
+        </ol>
+
+        <h2 id="score">Score: 0</h2>
+        <h2 id="timer">Timer: 30 seconds</h2>
+        <div id="image-container">
+             <img id="pokemon-image" src="" alt="">
+        </div>
+       
+
+        <input id="guess" type="text">
+        <br>
+        <button onclick="guessPokemon();">Guess</button>
+        <button onclick="nextPokemon();">Next Pokemon</button>
+    </div>
+    
+</body>
+</html>
