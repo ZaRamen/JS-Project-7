@@ -25,6 +25,10 @@ html, body
     text-align: center;
     margin: 0;
 }
+#message
+{
+    font-size: 2rem;
+}
 h2
 {
     font-size: 2.5rem;
