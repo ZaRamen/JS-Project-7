@@ -9,16 +9,17 @@ var currentHintName = "";
 function logKey(event)
 {
      console.log(event.which);
+     //enter key
+    if (event.which == 13)
+    {
+        guessPokemon();
+    }
      //key presses don't work when input field is focused
      if (document.getElementById('guess') != document.activeElement)
      {
-        //enter key
-        if (event.which == 13)
-        {
-            guessPokemon();
-        }
+        
         // '/' key
-        else if (event.which == 47)
+        if (event.which == 47)
         {
             hint();
         }
