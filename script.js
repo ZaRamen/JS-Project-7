@@ -28,10 +28,13 @@ async function getPokemonInfo()
     }
     while(name.includes("-"))
 
-    console.log(pokemonData)
+    console.log(pokemonData);
+   
     pokemonQuizInfo['name'] = name.charAt(0).toUpperCase() + name.slice(1);
-    pokemonQuizInfo['spriteURL'] = pokemonData['sprites']['front_default'];
+    pokemonQuizInfo['spriteURL'] = pokemonData['sprites']['front_default']; 
+    console.log(pokemonQuizInfo['name']);
 }
+
 
 async function startGame()
 {
@@ -82,6 +85,10 @@ function guessPokemon()
         console.log("wrong");
     }
     document.getElementById('guess').value = "";
+}
+function hint()
+{
+    
 }
 function nextPokemon(guessRight)
 {
